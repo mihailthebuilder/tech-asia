@@ -1,1 +1,3 @@
-console.log("hello");
+import { navbarLoad } from "./navbar/navbar.js";
+
+navbarLoad();
