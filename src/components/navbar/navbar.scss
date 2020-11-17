@@ -1,3 +1,31 @@
 nav {
   background: $gray;
+  display: flex;
+  justify-content: space-between;
+
+  ul > li,
+  div {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  div {
+    font-size: 2rem;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+
+    li {
+      display: inline-flex;
+      height: 100%;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
 }
