@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/mihailthebuilder/tech-asia#readme",
   "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^5.0.1",
     "file-loader": "^6.2.0",
     "prettier": "^2.1.2",
