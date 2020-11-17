@@ -9,7 +9,11 @@ module.exports = {
     path: path.resolve(__dirname, "dist"),
   },
 
-  plugins: [new CleanWebpackPlugin()],
+  plugins: [
+    new CleanWebpackPlugin({
+      cleanOnceBeforeBuildPatterns: ["**/*", "!index.html"],
+    }),
+  ],
 
   module: {
     rules: [
