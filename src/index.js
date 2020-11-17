@@ -1,3 +1,3 @@
-import { navbarLoad } from "./navbar/navbar.js";
+import { navbarLoad } from "./components/navbar/navbar.js";
 
 navbarLoad();
