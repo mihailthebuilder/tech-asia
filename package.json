@@ -1,0 +1,26 @@
+{
+  "name": "tech-asia",
+  "version": "1.0.0",
+  "description": "A news site about tech stuff in Asia. A project that enables me to recap what I learned from The Odin Project about Webpack and a few other minor things I learned along the way such as... * Prettier * Sass * [Coolors](https://coolors.co/ \"Coolors\") * Pure JavaScript, no jQuery * [Figma](https://www.figma.com/ \"Figma\") * Git using Bash",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "watch": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mihailthebuilder/tech-asia.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mihailthebuilder/tech-asia/issues"
+  },
+  "homepage": "https://github.com/mihailthebuilder/tech-asia#readme",
+  "devDependencies": {
+    "webpack": "^5.4.0",
+    "webpack-cli": "^4.2.0"
+  }
+}
