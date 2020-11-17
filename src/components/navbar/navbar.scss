@@ -9,18 +9,14 @@ nav {
 
   ul > li,
   div {
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   div {
     font-size: 2.5rem;
     padding-top: 0.8rem;
     padding-bottom: 0.8rem;
-
-    #nav-logo-red {
-      color: $chinese-red;
-    }
   }
 
   ul {
@@ -35,6 +31,22 @@ nav {
       height: 100%;
       flex-direction: column;
       justify-content: center;
+      cursor: pointer;
+      transition: $hover-transition;
+    }
+
+    li:hover {
+      color: $gold;
+      background: $dark-green;
     }
   }
+}
+
+#nav-logo-red {
+  color: $chinese-red;
+}
+
+.nav-li-clicked {
+  color: $dark-green;
+  background: $gold;
 }
