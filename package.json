@@ -20,6 +20,10 @@
   },
   "homepage": "https://github.com/mihailthebuilder/tech-asia#readme",
   "devDependencies": {
+    "css-loader": "^5.0.1",
+    "file-loader": "^6.2.0",
+    "sass-loader": "^10.1.0",
+    "style-loader": "^2.0.0",
     "webpack": "^5.4.0",
     "webpack-cli": "^4.2.0"
   }
