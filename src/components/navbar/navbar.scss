@@ -1,7 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Goldman&display=swap");
+
 nav {
   background: $gray;
   display: flex;
   justify-content: space-between;
+  font-family: "Goldman";
+  color: $dark-green;
 
   ul > li,
   div {
@@ -10,9 +14,13 @@ nav {
   }
 
   div {
-    font-size: 2rem;
+    font-size: 2.5rem;
     padding-top: 0.8rem;
     padding-bottom: 0.8rem;
+
+    #nav-logo-red {
+      color: $chinese-red;
+    }
   }
 
   ul {
@@ -20,6 +28,7 @@ nav {
     margin: 0;
     padding: 0;
     display: inline-block;
+    font-size: 1.7rem;
 
     li {
       display: inline-flex;
