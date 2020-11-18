@@ -1,4 +1,4 @@
-const articleLoad = () => {
+const articleLoad = (articleId = "china") => {
   console.log("articleLoad activated");
 };
 
