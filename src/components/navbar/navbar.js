@@ -13,9 +13,7 @@ const navbarLoad = () => {
     clickStyle(element, "nav-li-clicked");
   });
 
-  //---TO CHANGE---
-  navLinks[0].addEventListener("click", articleLoad);
-  navLinks[1].addEventListener("click", articleLoad);
+  navLinks[0].addEventListener("click", articleLoad());
 };
 
 export { navbarLoad };
