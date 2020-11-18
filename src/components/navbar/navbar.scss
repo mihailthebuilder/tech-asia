@@ -32,7 +32,6 @@ nav {
       flex-direction: column;
       justify-content: center;
       cursor: pointer;
-      transition: $hover-transition;
     }
 
     li:hover {
@@ -46,7 +45,7 @@ nav {
   color: $chinese-red;
 }
 
-.nav-li-clicked {
+.nav-li-clicked:hover {
   color: $dark-green;
   background: $gold;
 }
