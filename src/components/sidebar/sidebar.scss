@@ -1,0 +1,10 @@
+aside {
+  display: inline-flex;
+  flex-direction: column;
+  background: $dark-green;
+  height: 100%;
+
+  div {
+    color: $gold;
+  }
+}
