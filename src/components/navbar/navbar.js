@@ -4,10 +4,11 @@ import html from "./navbar.html";
 const navbarLoad = () => {
   document.body.insertAdjacentHTML("beforeend", html);
 
-  /*
-  document.querySelector("li").onclick((event) => {
-    console.log(event.target);
-  });*/
+  document.querySelectorAll("nav li").forEach((element) => {
+    element.onclick = (event) => {
+      console.log(event.target);
+    };
+  });
 };
 
 export { navbarLoad };
