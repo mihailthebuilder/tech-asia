@@ -26,7 +26,7 @@ module.exports = {
           {
             loader: "sass-resources-loader",
             options: {
-              resources: "./src/resources.scss",
+              resources: "./src/common/common.scss",
             },
           },
         ],

@@ -1,5 +1,6 @@
 import "./navbar.scss";
 import html from "./navbar.html";
+import { clickStyle } from "../../common/common.js";
 
 import { articleLoad } from "../articles/articles.js";
 
@@ -15,17 +16,6 @@ const navbarLoad = () => {
   //---TO CHANGE---
   navLinks[0].addEventListener("click", articleLoad);
   navLinks[1].addEventListener("click", articleLoad);
-};
-
-const clickStyle = (element, style) => {
-  element.addEventListener("click", (event) => {
-    let newElem = event.target;
-    newElem.classList.add(style);
-
-    setTimeout(() => {
-      newElem.classList.remove(style);
-    }, 200);
-  });
 };
 
 export { navbarLoad };

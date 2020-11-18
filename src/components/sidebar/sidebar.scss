@@ -5,6 +5,21 @@ aside {
   height: 100%;
 
   div {
+    padding: 1rem 2rem;
     color: $gold;
+    border-bottom-style: solid;
+    border-color: $gray;
+    border-width: 0.05px;
+    cursor: pointer;
   }
+
+  div:hover {
+    color: $dark-green;
+    background: $gold;
+  }
+}
+
+.side-div-clicked {
+  color: $gold;
+  background: $gray;
 }
