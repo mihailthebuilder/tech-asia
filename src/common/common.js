@@ -1,3 +1,6 @@
+import { sidebarLoad } from "../components/sidebar/sidebar.js";
+import { articleLoad } from "../components/articles/articles.js";
+
 const clickStyle = (element, style) => {
   element.addEventListener("click", (event) => {
     let newElem = event.target;
@@ -9,4 +12,11 @@ const clickStyle = (element, style) => {
   });
 };
 
-export { clickStyle };
+const homepageLoad = () => {
+  document.querySelector("main").innerHTML = "";
+  console.log("does it get here?");
+  sidebarLoad();
+  articleLoad();
+};
+
+export { clickStyle, homepageLoad };

@@ -1,8 +1,9 @@
 import "./navbar.scss";
 import html from "./navbar.html";
-import { clickStyle } from "../../common/common.js";
 
+import { clickStyle } from "../../common/common.js";
 import { articleLoad } from "../articles/articles.js";
+import { homepageLoad } from "../../common/common.js";
 
 const navbarLoad = () => {
   document.body.insertAdjacentHTML("afterbegin", html);
@@ -14,7 +15,7 @@ const navbarLoad = () => {
   });
 
   navLinks[0].addEventListener("click", () => {
-    articleLoad();
+    homepageLoad();
   });
 };
 

@@ -1,8 +1,7 @@
 import "./index.scss";
 
 import { navbarLoad } from "./components/navbar/navbar.js";
-
-import { sidebarLoad } from "./components/sidebar/sidebar.js";
+import { homepageLoad } from "./common/common.js";
 
 navbarLoad();
-sidebarLoad();
+homepageLoad();
