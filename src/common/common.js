@@ -14,7 +14,6 @@ const clickStyle = (element, style) => {
 
 const homepageLoad = () => {
   document.querySelector("main").innerHTML = "";
-  console.log("does it get here?");
   sidebarLoad();
   articleLoad();
 };
