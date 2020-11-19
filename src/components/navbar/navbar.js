@@ -4,6 +4,8 @@ import html from "./navbar.html";
 import { clickStyle, moveTop } from "../../common/common.js";
 import { homepageLoad } from "../../common/common.js";
 
+import { contactLoad } from "../contact/contact.js";
+
 const navbarLoad = () => {
   document.body.insertAdjacentHTML("afterbegin", html);
 
@@ -18,6 +20,10 @@ const navbarLoad = () => {
 
   navLinks[0].addEventListener("click", () => {
     homepageLoad();
+  });
+
+  navLinks[1].addEventListener("click", () => {
+    contactLoad();
   });
 };
 
