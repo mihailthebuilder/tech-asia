@@ -5,7 +5,7 @@ aside {
   font-family: "Roboto Condensed";
 
   div {
-    padding: 1rem 2rem;
+    padding: 1rem $site-padding-left;
     color: $gold;
     cursor: pointer;
   }
