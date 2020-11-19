@@ -2,15 +2,11 @@ aside {
   display: inline-flex;
   flex-direction: column;
   background: $dark-green;
-  height: 100%;
   font-family: "Roboto Condensed";
 
   div {
     padding: 1rem 2rem;
     color: $gold;
-    border-bottom-style: solid;
-    border-color: $gray;
-    border-width: 0.05px;
     cursor: pointer;
   }
 
