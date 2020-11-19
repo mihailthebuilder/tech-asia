@@ -26,7 +26,10 @@ module.exports = {
           {
             loader: "sass-resources-loader",
             options: {
-              resources: "./src/common/common.scss",
+              resources: [
+                "./src/common/common.scss",
+                //"https://fonts.googleapis.com/css2?family=Roboto&display=swap",
+              ],
             },
           },
         ],
