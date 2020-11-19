@@ -5,6 +5,10 @@ nav {
   font-family: "Goldman";
   color: $dark-green;
 
+  div {
+    cursor: default;
+  }
+
   ul > li,
   div {
     padding-left: 2rem;

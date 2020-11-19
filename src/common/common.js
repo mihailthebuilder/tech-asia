@@ -12,10 +12,14 @@ const clickStyle = (element, style) => {
   });
 };
 
+const moveTop = () => {
+  window.scrollTo(0, 0);
+};
+
 const homepageLoad = () => {
   document.querySelector("main").innerHTML = "";
   sidebarLoad();
   articleLoad();
 };
 
-export { clickStyle, homepageLoad };
+export { clickStyle, homepageLoad, moveTop };

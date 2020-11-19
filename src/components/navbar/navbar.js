@@ -1,7 +1,7 @@
 import "./navbar.scss";
 import html from "./navbar.html";
 
-import { clickStyle } from "../../common/common.js";
+import { clickStyle, moveTop } from "../../common/common.js";
 import { homepageLoad } from "../../common/common.js";
 
 const navbarLoad = () => {
@@ -11,6 +11,9 @@ const navbarLoad = () => {
 
   navLinks.forEach((element) => {
     clickStyle(element, "nav-li-clicked");
+    element.addEventListener("click", () => {
+      moveTop();
+    });
   });
 
   navLinks[0].addEventListener("click", () => {

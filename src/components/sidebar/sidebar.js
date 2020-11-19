@@ -1,6 +1,6 @@
 import "./sidebar.scss";
 import html from "./sidebar.html";
-import { clickStyle } from "../../common/common.js";
+import { clickStyle, moveTop } from "../../common/common.js";
 import { articleLoad } from "../articles/articles.js";
 
 const sidebarLoad = () => {
@@ -11,6 +11,7 @@ const sidebarLoad = () => {
 
     element.addEventListener("click", (event) => {
       articleLoad(event.target.getAttribute("linkTo"));
+      moveTop();
     });
   });
 };
