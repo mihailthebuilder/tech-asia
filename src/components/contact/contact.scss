@@ -4,14 +4,24 @@
   //needed because <main> elem had flex dispaly
   width: 100%;
 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   h1 {
     text-align: center;
+  }
+
+  form * {
+    font-size: 1.4rem;
+    font-family: "Roboto";
   }
 
   form {
     margin-top: 5rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 1.5rem 2rem;
 
     .fullRow {
       grid-column-start: 1;
@@ -20,7 +30,18 @@
 
     input,
     textarea {
-      padding: 0.3rem 0.6rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+
+    input {
+      padding-top: 0.6rem;
+      padding-bottom: 0.6rem;
+    }
+
+    textarea {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
     }
   }
 }
