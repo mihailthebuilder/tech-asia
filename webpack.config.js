@@ -2,6 +2,13 @@ const path = require("path");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = {
+  //dev options
+  mode: "development",
+  devtool: "inline-source-map",
+  devServer: {
+    contentBase: "./dist",
+  },
+
   entry: "./src/index.js",
 
   output: {
