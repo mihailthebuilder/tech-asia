@@ -10,11 +10,11 @@ nav {
   }
 
   ul > li,
-  div {
+  #nav-logo-wrapper {
     padding: 0 $site-padding-left;
   }
 
-  div {
+  #nav-logo-wrapper {
     font-size: 2.5rem;
     padding-top: 0.8rem;
     padding-bottom: 0.8rem;
@@ -49,4 +49,16 @@ nav {
 .nav-li-clicked:hover {
   color: $dark-green;
   background: $gold;
+}
+
+@media (max-width: $tablet-screen) {
+  nav {
+    #nav-logo-wrapper {
+      font-size: 1.5rem;
+    }
+
+    ul {
+      display: none;
+    }
+  }
 }

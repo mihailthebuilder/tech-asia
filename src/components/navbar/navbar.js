@@ -1,5 +1,6 @@
 import "./navbar.scss";
 import html from "./navbar.html";
+import svg from "./hamburger.svg";
 
 import { clickStyle, moveTop } from "../../common/common.js";
 import { homepageLoad } from "../../common/common.js";
@@ -25,6 +26,8 @@ const navbarLoad = () => {
   navLinks[1].addEventListener("click", () => {
     contactLoad();
   });
+
+  document.getElementById("dropdown-button-wrapper").insertAdjacentHTML(svg);
 };
 
 export { navbarLoad };
