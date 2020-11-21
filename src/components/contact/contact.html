@@ -1,24 +1,45 @@
 <section id="contact-section">
-  <h1>Want to advertise? Send us a message here!</h1>
-  <form action="">
-    <input name="firstName" type="text" placeholder="First name" />
-    <input name="lastName" type="text" placeholder="Last name" />
-    <input class="fullRow" name="email" type="email" placeholder="Email" />
-    <input name="company" type="text" placeholder="Company name" />
-    <input name="job" type="text" placeholder="Job title" />
-    <input class="fullRow" name="country" type="text" placeholder="Country" />
-    <textarea
-      class="fullRow"
-      name="howHelp"
-      id=""
-      cols="30"
-      rows="10"
-      placeholder="How can we help?"
-    ></textarea>
-    <div class="fullRow">
-      <label for="budget">Campaign budget (USD)</label>
-      <select name="budget" id="budget"></select>
-    </div>
-    <button class="fullRow" type="submit">Contact us</button>
-  </form>
+  <div>
+    <h1>Want to advertise? Send us a message here!</h1>
+    <form action="">
+      <input name="firstName" type="text" placeholder="First name" required />
+      <input name="lastName" type="text" placeholder="Last name" required />
+      <input
+        class="fullRow"
+        name="email"
+        type="email"
+        placeholder="Email"
+        required
+      />
+      <input name="company" type="text" placeholder="Company name" required />
+      <input name="job" type="text" placeholder="Job title" required />
+      <input
+        class="fullRow"
+        name="country"
+        type="text"
+        placeholder="Country"
+        required
+      />
+      <textarea
+        class="fullRow"
+        name="howHelp"
+        id=""
+        cols="30"
+        rows="10"
+        placeholder="How can we help?"
+        required
+      ></textarea>
+      <div class="fullRow">
+        <label for="budget">Campaign budget (USD)</label>
+        <select name="budget" id="budget" required>
+          <option value="0">Less than $10,000</option>
+          <option value="1">$10,001 - $25,000</option>
+          <option value="2">$25,001 - $50,000</option>
+          <option value="3">$50,001 - $100,000</option>
+          <option value="4">More than $100,000</option>
+        </select>
+      </div>
+      <button class="fullRow" type="submit">Contact us</button>
+    </form>
+  </div>
 </section>

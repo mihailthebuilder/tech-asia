@@ -1,5 +1,5 @@
 #contact-section {
-  padding: 4rem;
+  padding: 4rem 0;
 
   //needed because <main> elem had flex dispaly
   width: 100%;
@@ -7,13 +7,19 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: $transparent-red;
+
+  > div {
+    background: $transparent-gray;
+    padding: 3rem 7rem;
+  }
 
   h1 {
     text-align: center;
   }
 
   form * {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-family: "Roboto";
   }
 
@@ -32,6 +38,7 @@
     textarea {
       padding-left: 1rem;
       padding-right: 1rem;
+      font-style: italic;
     }
 
     input {
@@ -42,6 +49,21 @@
     textarea {
       padding-top: 1rem;
       padding-bottom: 1rem;
+    }
+
+    label,
+    select {
+      display: block;
+    }
+
+    label {
+      margin-bottom: 0.5rem;
+    }
+
+    select {
+      padding: 0.5rem 0.5rem;
+      width: 100%;
+      color: hsla(15, 0%, 31%, 1);
     }
   }
 }
