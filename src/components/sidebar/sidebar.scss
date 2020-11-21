@@ -26,3 +26,9 @@ aside {
   color: $gold;
   background: $blood-red;
 }
+
+@media (max-width: $tablet-screen) {
+  aside {
+    display: block;
+  }
+}

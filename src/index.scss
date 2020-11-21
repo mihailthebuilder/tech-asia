@@ -11,3 +11,9 @@ main {
   display: flex;
   flex-direction: row;
 }
+
+@media (max-width: $tablet-screen) {
+  main {
+    display: block;
+  }
+}
