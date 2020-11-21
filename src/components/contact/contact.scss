@@ -65,5 +65,24 @@
       width: 100%;
       color: hsla(15, 0%, 31%, 1);
     }
+
+    button {
+      margin-top: 1rem;
+      padding: 1rem 0;
+      background: $transparent-red;
+      color: white;
+      border-color: $dark-green;
+      border-radius: 0.3rem;
+      font-size: 1.5rem;
+      border-style: solid;
+      width: 15rem;
+      cursor: pointer;
+    }
+
+    button:hover {
+      color: $gold;
+      background: $dark-green;
+      border-color: $gold;
+    }
   }
 }
