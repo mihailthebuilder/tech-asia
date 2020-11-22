@@ -26,11 +26,6 @@ const navbarLoad = () => {
   navLinks[1].addEventListener("click", () => {
     contactLoad();
   });
-<<<<<<< HEAD
-=======
-
-  document.getElementById("dropdown-button-wrapper").insertAdjacentHTML(svg);
->>>>>>> parent of 21e1a27 (restarted svg load attempts)
 };
 
 export { navbarLoad };
