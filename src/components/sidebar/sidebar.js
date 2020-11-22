@@ -1,7 +1,8 @@
 import "./sidebar.scss";
 import html from "./sidebar.html";
-import { clickStyle, moveTop } from "../../common/common.js";
+import { clickStyle } from "../../common/common.js";
 import { articleLoad } from "../articles/articles";
+import { contactLoad } from "../contact/contact.js";
 
 const sidebarLoad = () => {
   document.querySelector("main").insertAdjacentHTML("afterbegin", html);
@@ -13,8 +14,11 @@ const sidebarLoad = () => {
   document.querySelectorAll(".article-link").forEach((element) => {
     element.addEventListener("click", (event) => {
       articleLoad(event.target.getAttribute("linkTo"));
-      moveTop();
     });
+  });
+
+  document.getElementById("contact-link").addEventListener("click", () => {
+    contactLoad();
   });
 };
 

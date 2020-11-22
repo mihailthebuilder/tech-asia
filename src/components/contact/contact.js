@@ -1,6 +1,8 @@
 import html from "./contact.html";
 import "./contact.scss";
 
+import { moveTop } from "../../common/common.js";
+
 const contactLoad = () => {
   document.querySelector("main").innerHTML = html;
 
@@ -20,6 +22,8 @@ const contactLoad = () => {
         }, 100);
       }, 500);
     });
+
+  moveTop();
 };
 
 export { contactLoad };
