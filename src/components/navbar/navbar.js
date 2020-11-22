@@ -6,6 +6,7 @@ import { clickStyle, moveTop } from "../../common/common.js";
 import { homepageLoad } from "../../common/common.js";
 
 import { contactLoad } from "../contact/contact.js";
+import { sidebarMobileShow } from "../sidebar/sidebar.js";
 
 const navbarLoad = () => {
   document.body.insertAdjacentHTML("afterbegin", html);
@@ -27,9 +28,13 @@ const navbarLoad = () => {
     contactLoad();
   });
 
-  document
-    .getElementById("dropdown-button-wrapper")
-    .insertAdjacentHTML("afterbegin", svg);
+  let dropdownButton = document.getElementById("dropdown-button-wrapper");
+  dropdownButton.insertAdjacentHTML("afterbegin", svg);
+
+  dropdownButton.addEventListener("click", (event) => {
+    dropdownButton.classList.toggle("nav-selected");
+    sidebarMobileShow();
+  });
 };
 
 export { navbarLoad };

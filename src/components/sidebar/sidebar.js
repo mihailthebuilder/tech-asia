@@ -16,4 +16,8 @@ const sidebarLoad = () => {
   });
 };
 
-export { sidebarLoad };
+const sidebarMobileShow = () => {
+  console.log("sidebarMobileShow loaded");
+};
+
+export { sidebarLoad, sidebarMobileShow };

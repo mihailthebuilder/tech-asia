@@ -83,4 +83,12 @@ nav {
     width: 2.5rem;
     padding: 0 0.7rem;
   }
+
+  .nav-selected {
+    background: $blood-red;
+
+    svg {
+      fill: $gold;
+    }
+  }
 }
