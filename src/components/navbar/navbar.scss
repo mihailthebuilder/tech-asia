@@ -92,11 +92,13 @@ nav {
   nav {
     #nav-logo-wrapper {
       font-size: 1.1rem;
+      padding-left: $mobile-padding-left;
+      padding-right: $mobile-padding-left;
     }
   }
 
   #dropdown-button-wrapper {
     width: 2.5rem;
-    padding: 0 0.7rem;
+    padding: 0 $mobile-padding-left;
   }
 }
