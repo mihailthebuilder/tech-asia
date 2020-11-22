@@ -27,8 +27,9 @@ const navbarLoad = () => {
     contactLoad();
   });
 
-  console.log(svg);
-  document.body.insertAdjacentHTML("afterbegin", svg);
+  document
+    .getElementById("dropdown-button-wrapper")
+    .insertAdjacentHTML("afterbegin", svg);
 };
 
 export { navbarLoad };

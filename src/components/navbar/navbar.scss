@@ -53,12 +53,34 @@ nav {
 
 @media (max-width: $tablet-screen) {
   nav {
-    #nav-logo-wrapper {
-      font-size: 1.5rem;
-    }
-
     ul {
       display: none;
     }
+
+    #nav-logo-wrapper {
+      font-size: 1.5rem;
+    }
+  }
+
+  #dropdown-button-wrapper {
+    width: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 $site-padding-left;
+  }
+}
+
+@media (max-width: $mobile-screen) {
+  nav {
+    #nav-logo-wrapper {
+      font-size: 1.1rem;
+    }
+  }
+
+  #dropdown-button-wrapper {
+    width: 2.5rem;
+    padding: 0 0.7rem;
   }
 }
