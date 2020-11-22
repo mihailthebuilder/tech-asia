@@ -40,6 +40,10 @@ nav {
       background: $dark-green;
     }
   }
+
+  #dropdown-button-wrapper {
+    display: none;
+  }
 }
 
 #nav-logo-red {
@@ -50,6 +54,8 @@ nav {
   color: $dark-green;
   background: $gold;
 }
+
+//===================================================
 
 @media (max-width: $tablet-screen) {
   nav {
@@ -64,13 +70,23 @@ nav {
 
   #dropdown-button-wrapper {
     width: 3rem;
-    display: flex;
+    display: flex !important;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 0 $site-padding-left;
   }
+
+  .nav-selected {
+    background: $blood-red;
+
+    svg {
+      fill: $gold;
+    }
+  }
 }
+
+//===================================================
 
 @media (max-width: $mobile-screen) {
   nav {
@@ -82,13 +98,5 @@ nav {
   #dropdown-button-wrapper {
     width: 2.5rem;
     padding: 0 0.7rem;
-  }
-
-  .nav-selected {
-    background: $blood-red;
-
-    svg {
-      fill: $gold;
-    }
   }
 }

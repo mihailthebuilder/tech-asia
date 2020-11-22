@@ -6,14 +6,11 @@ import { articleLoad } from "../articles/articles.js";
 const sidebarLoad = () => {
   document.querySelector("main").insertAdjacentHTML("afterbegin", html);
 
-  document.querySelectorAll("aside div").forEach((element) => {
+  document.querySelectorAll("aside li").forEach((element) => {
     clickStyle(element, "side-div-clicked");
-
-    element.addEventListener("click", (event) => {
-      articleLoad(event.target.getAttribute("linkTo"));
-      moveTop();
-    });
   });
+
+  document.querySelectorAll(".article-link");
 };
 
 const sidebarMobileShow = () => {

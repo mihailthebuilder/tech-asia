@@ -3,22 +3,30 @@ aside {
   flex-direction: column;
   background: $dark-green;
   font-family: "Roboto Condensed";
+  color: $gold;
 
-  div {
-    padding: 1rem $site-padding-left;
-    color: $gold;
-    cursor: pointer;
-  }
-
-  div:hover {
-    color: $dark-green;
-    background: $gold;
-  }
-
-  section {
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
     position: -webkit-sticky;
     position: sticky;
     top: 2rem;
+
+    li {
+      padding: 1rem $site-padding-left;
+      cursor: pointer;
+    }
+
+    .hidden-nav {
+      padding-left: $site-padding-left;
+      display: none;
+    }
+
+    li:hover {
+      color: $dark-green;
+      background: $gold;
+    }
   }
 }
 
@@ -30,5 +38,20 @@ aside {
 @media (max-width: $tablet-screen) {
   aside {
     display: block;
+
+    ul .hidden-nav {
+      display: block;
+    }
+  }
+}
+
+@media (max-width: $mobile-screen) {
+  aside {
+    font-size: 1rem;
+
+    li {
+      padding-top: 0.7rem !important;
+      padding-bottom: 0.7rem !important;
+    }
   }
 }
