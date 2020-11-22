@@ -13,16 +13,13 @@ const navbarLoad = () => {
 
   let navLinks = document.querySelectorAll("nav li");
 
-  navLinks.forEach((element) => {
-    clickStyle(element, "nav-li-clicked");
-  });
+  navLinks.forEach((element, index) => {
+    element.addEventListener("click", (event) => {
+      let clickedElem = event.target;
+      clickStyle(clickedElem, "nav-li-clicked");
 
-  navLinks[0].addEventListener("click", () => {
-    homepageLoad();
-  });
-
-  navLinks[1].addEventListener("click", () => {
-    contactLoad();
+      index == 0 ? homepageLoad() : contactLoad();
+    });
   });
 
   let dropdownButton = document.getElementById("dropdown-button-wrapper");

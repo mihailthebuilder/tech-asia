@@ -2,14 +2,11 @@ import { sidebarLoad } from "../components/sidebar/sidebar.js";
 import { articleLoad } from "../components/articles/articles.js";
 
 const clickStyle = (element, style) => {
-  element.addEventListener("click", (event) => {
-    let newElem = event.target;
-    newElem.classList.add(style);
+  element.classList.add(style);
 
-    setTimeout(() => {
-      newElem.classList.remove(style);
-    }, 200);
-  });
+  setTimeout(() => {
+    element.classList.remove(style);
+  }, 200);
 };
 
 const moveTop = () => {

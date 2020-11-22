@@ -8,17 +8,17 @@ const sidebarLoad = () => {
   document.querySelector("main").insertAdjacentHTML("afterbegin", html);
 
   document.querySelectorAll("aside li").forEach((element) => {
-    clickStyle(element, "side-div-clicked");
-  });
-
-  document.querySelectorAll(".article-link").forEach((element) => {
     element.addEventListener("click", (event) => {
-      articleLoad(event.target.getAttribute("linkTo"));
-    });
-  });
+      let clickedElem = event.target;
 
-  document.getElementById("contact-link").addEventListener("click", () => {
-    contactLoad();
+      clickStyle(clickedElem, "side-div-clicked");
+
+      if (clickedElem.hasAttribute("id")) {
+        contactLoad();
+      } else {
+        articleLoad(clickedElem.getAttribute("linkTo"));
+      }
+    });
   });
 };
 
