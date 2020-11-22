@@ -26,8 +26,6 @@ const navbarLoad = () => {
   navLinks[1].addEventListener("click", () => {
     contactLoad();
   });
-
-  document.getElementById("dropdown-button-wrapper").insertAdjacentHTML(svg);
 };
 
 export { navbarLoad };
