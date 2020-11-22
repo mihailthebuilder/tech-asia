@@ -26,6 +26,9 @@ const navbarLoad = () => {
   navLinks[1].addEventListener("click", () => {
     contactLoad();
   });
+
+  console.log(svg);
+  document.body.insertAdjacentHTML("afterbegin", svg);
 };
 
 export { navbarLoad };
