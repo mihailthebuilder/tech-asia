@@ -37,7 +37,7 @@ aside {
 
 @media (max-width: $tablet-screen) {
   aside {
-    display: block;
+    display: none;
 
     ul .hidden-nav {
       display: block;

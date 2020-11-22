@@ -1,7 +1,6 @@
 import "./sidebar.scss";
 import html from "./sidebar.html";
-import { clickStyle, moveTop } from "../../common/common.js";
-import { articleLoad } from "../articles/articles.js";
+import { clickStyle } from "../../common/common.js";
 
 const sidebarLoad = () => {
   document.querySelector("main").insertAdjacentHTML("afterbegin", html);
@@ -14,7 +13,17 @@ const sidebarLoad = () => {
 };
 
 const sidebarMobileShow = () => {
-  console.log("sidebarMobileShow loaded");
+  let sidebar = document.getElementsByTagName("aside")[0];
+
+  if (
+    document
+      .getElementById("dropdown-button-wrapper")
+      .classList.contains("nav-selected")
+  ) {
+    sidebar.style.display = "block";
+  } else {
+    sidebar.style.display = "none";
+  }
 };
 
 export { sidebarLoad, sidebarMobileShow };
