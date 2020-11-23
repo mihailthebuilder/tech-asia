@@ -19,7 +19,10 @@ const sidebarLoad = () => {
         articleLoad(clickedElem.getAttribute("linkTo"));
       }
 
-      document.getElementsByTagName("aside")[0].style.display = "none";
+      if (screen.width <= 768) {
+        document.getElementsByTagName("aside")[0].style.display = "none";
+      }
+
       document
         .getElementById("dropdown-button-wrapper")
         .classList.toggle("nav-selected");
