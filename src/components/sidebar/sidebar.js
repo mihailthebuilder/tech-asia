@@ -18,6 +18,11 @@ const sidebarLoad = () => {
       } else {
         articleLoad(clickedElem.getAttribute("linkTo"));
       }
+
+      document.getElementsByTagName("aside")[0].style.display = "none";
+      document
+        .getElementById("dropdown-button-wrapper")
+        .classList.toggle("nav-selected");
     });
   });
 };
