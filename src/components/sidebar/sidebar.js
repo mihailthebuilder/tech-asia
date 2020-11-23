@@ -18,22 +18,32 @@ const sidebarLoad = () => {
       } else {
         articleLoad(clickedElem.getAttribute("linkTo"));
       }
+
+      /*
+      // if dropdown visible then hide sidebar after click
+      if (
+        document.getElementById("dropdown-button-wrapper").offsetParent != null
+      ) {
+        sidebarMobileShow();
+      }*/
     });
   });
 };
 
-const sidebarMobileShow = () => {
+const sidebarMobileToggle = () => {
   let sidebar = document.getElementsByTagName("aside")[0];
+  console.log(sidebar);
 
   if (
-    document
-      .getElementById("dropdown-button-wrapper")
-      .classList.contains("nav-selected")
+    sidebar.style.display == "block" ||
+    sidebar.style.display == "block !important"
   ) {
-    sidebar.style.display = "block";
+    sidebar.style.display = "none !important";
   } else {
-    sidebar.style.display = "none";
+    sidebar.style.display = "block !important";
   }
+
+  console.log(sidebar.style.display);
 };
 
-export { sidebarLoad, sidebarMobileShow };
+export { sidebarLoad, sidebarMobileToggle };
