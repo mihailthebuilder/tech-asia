@@ -6,7 +6,7 @@ import { clickStyle } from "../../common/common.js";
 import { homepageLoad } from "../../common/common.js";
 
 import { contactLoad } from "../contact/contact.js";
-import { sidebarMobileToggle } from "../sidebar/sidebar.js";
+import { sidebarMobileShow } from "../sidebar/sidebar.js";
 
 const navbarLoad = () => {
   document.body.insertAdjacentHTML("afterbegin", html);
@@ -27,7 +27,7 @@ const navbarLoad = () => {
 
   dropdownButton.addEventListener("click", (event) => {
     dropdownButton.classList.toggle("nav-selected");
-    sidebarMobileToggle();
+    sidebarMobileShow();
   });
 };
 
