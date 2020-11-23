@@ -4,7 +4,16 @@ import "./contact.scss";
 import { moveTop } from "../../common/common.js";
 
 const contactLoad = () => {
-  document.querySelector("main").innerHTML = html;
+  let newHtml = new DOMParser().parseFromString(html, "text/html");
+
+  document
+    .querySelector("main")
+    .replaceChild(
+      newHtml.documentElement.querySelector("section"),
+      document.querySelector("section")
+    );
+
+  document.getElementsByTagName("aside")[0].style.display = "none";
 
   document
     .getElementsByTagName("form")[0]
