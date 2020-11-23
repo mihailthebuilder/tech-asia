@@ -6,7 +6,7 @@ footer {
 
 @media (max-width: $mobile-screen) {
   footer {
+    text-align: center;
     font-size: 1rem;
-    padding-left: $mobile-padding-left;
   }
 }

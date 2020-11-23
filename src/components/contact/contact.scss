@@ -1,7 +1,7 @@
 #contact-section {
   padding: 4rem 0;
 
-  //needed because <main> elem had flex dispaly
+  //needed because <main> elem had flex display
   width: 100%;
 
   display: flex;
@@ -113,5 +113,48 @@
   .show {
     display: block;
     opacity: 1 !important;
+  }
+}
+
+@media (max-width: $tablet-screen) {
+  #contact-section * {
+    box-sizing: border-box;
+  }
+
+  #contact-section {
+    padding: 2rem 0;
+
+    h1 {
+      font-size: 1.3rem;
+    }
+
+    > div {
+      padding: 0 1.5rem;
+      width: auto;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      margin-top: 2rem;
+
+      button {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}
+
+@media (max-width: $mobile-screen) {
+  #contact-section > div {
+    width: 100%;
+
+    form * {
+      font-size: 1rem;
+    }
+
+    button {
+      width: 100%;
+    }
   }
 }
