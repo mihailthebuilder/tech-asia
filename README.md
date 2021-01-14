@@ -2,7 +2,7 @@
 
 ## Overview
 
-A 2-page, static news site on tech startups in Asia. Built with JavaScript, [Webpack 5](https://webpack.js.org/) and [Sass](https://sass-lang.com/).
+A 2-page, static news site on tech startups in Asia. Built with JavaScript, [Webpack 5](https://webpack.js.org/) and [Sass](https://sass-lang.com/). See it live [here](https://mihailthebuilder.github.io/tech-asia/).
 
 ## Highlights
 
@@ -52,7 +52,46 @@ const navbarLoad = () => {
 
 This feature was especially useful when rendering different articles - [see below](.......)
 
+Configuration in `webpack.config.js`:
+
+```js
+module: {
+  rules: [
+    {
+      test: /\.html$/i,
+      use: "html-loader",
+    },
+  ];
+}
+```
+
 #### [file-loader](https://webpack.js.org/loaders/file-loader/)
+
+Converts `import/require` statements on a file into a url and places the file in the output directory.
+
+In this case, there is actually no `import/require` statement applied **directly** to files. Instead, the plugin is used by [html-loader](#html-loader) when reading `src` attributes in order to load article images.Example from [articles.html](./components/articles/articles.html):
+
+```html
+<figure>
+  <img src="./img/india.jpg" alt="WhatsApp" />
+  <figcaption>Photo credit: Venturebeat</figcaption>
+</figure>
+```
+
+Configuration in `webpack.config.js`:
+
+```js
+module: {
+  rules: [
+    {
+      test: /\.(png|jpg|gif|jpeg)$/,
+      use: "file-loader",
+    },
+  ];
+}
+```
+
+#### [style-loader](https://webpack.js.org/loaders/style-loader/), [css-loader](https://webpack.js.org/loaders/css-loader/), [sass-loader](https://webpack.js.org/loaders/sass-loader/) and [sass-resource-loader](https://github.com/shakacode/sass-resources-loader)
 
 ### Single-page web app
 
