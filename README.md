@@ -39,12 +39,25 @@ module: {
 }
 ```
 
+#### [html-loader](https://webpack.js.org/loaders/html-loader/)
+
+Exports HTML as string. That way, I can place the HTML code in a separate file and load it into my JavaScript file as a String variable.
+
+```js
+import html from "./navbar.html";
+const navbarLoad = () => {
+  document.body.insertAdjacentHTML("afterbegin", html);
+};
+```
+
+This feature was especially useful when rendering different articles - [see below](.......)
+
+#### [file-loader](https://webpack.js.org/loaders/file-loader/)
+
 ### Single-page web app
+
+No need to reload
 
 ### Mobile navbar
 
-A news site about tech stuff in Asia. A project that enables me to recap what I learned from The Odin Project about Webpack and a few other minor things I picked up along the way such as...
-
-- Prettier
-- Pure JavaScript, no jQuery
-- Git using Bash
+### Fade-out effect - no jQuery, only JavaScript
