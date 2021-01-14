@@ -12,7 +12,32 @@ The following webpack plugins were installed:
 
 #### [raw-loader](https://webpack.js.org/loaders/raw-loader/)
 
-Test
+Imports files as a String. I use it together with [insertAdjacentHTML()](https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentHTML) to render the navbar dropdown button as an `svg` HTML element:
+
+```js
+import svg from "./hamburger.svg";
+let dropdownButton = document.getElementById("dropdown-button-wrapper");
+dropdownButton.insertAdjacentHTML("afterbegin", svg);
+```
+
+The result:
+
+![svg](./demo/svg.png)
+
+By rendering it this way, I can select the svg element in my `scss` file and change its color through the `fill` style attribute.
+
+Configuration in `webpack.config.js`:
+
+```js
+module: {
+  rules: [
+    {
+      test: /\.svg$/i,
+      use: "raw-loader",
+    },
+  ];
+}
+```
 
 ### Single-page web app
 
