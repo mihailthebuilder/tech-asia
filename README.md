@@ -209,5 +209,3 @@ const sidebarMobileShow = () => {
   }
 };
 ```
-
-### Fade-out effect - no jQuery, only JavaScript
