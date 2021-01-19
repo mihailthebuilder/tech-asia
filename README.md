@@ -1,3 +1,16 @@
+- [Tech News Asia](#tech-news-asia)
+  - [Overview](#overview)
+  - [Highlights](#highlights)
+    - [Webpack configuration](#webpack-configuration)
+      - [raw-loader](#raw-loader)
+      - [html-loader](#html-loader)
+      - [file-loader](#file-loader)
+      - [style-loader, [css-loader](https://webpack.js.org/loaders/css-loader/), [sass-loader](https://webpack.js.org/loaders/sass-loader/) and [sass-resource-loader](https://github.com/shakacode/sass-resources-loader)](#style-loader-css-loader-sass-loader-and-sass-resource-loader)
+      - [clean-webpack-plugin](#clean-webpack-plugin)
+      - [webpack-dev-server](#webpack-dev-server)
+    - [Single-page web app](#single-page-web-app)
+    - [Desktop sidebar -> mobile navbar conversion](#desktop-sidebar---mobile-navbar-conversion)
+
 # Tech News Asia
 
 ## Overview
